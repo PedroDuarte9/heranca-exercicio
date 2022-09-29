@@ -21,12 +21,12 @@ public class Program {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        Account acc = new Account(1201, "Pedro Duarte", 500.00);
+        Account acc = new Account(1201, "Pedro Duarte", 1000.00);
         acc.withdraw(50.0);
-        BusinessAccount bcc = new BusinessAccount(1301, "Flávia Marques", 500.0, 0.0);
-        bcc.withdraw(50.0);
-        SavingsAccount savingsAccount = new SavingsAccount(133,"Carlos", 500.0, 0.01);
-        savingsAccount.withdraw(50.0);
+        BusinessAccount bcc = new BusinessAccount(1301, "Flávia Marques", 1000.0, 0.0);
+        bcc.withdraw(200.0);
+        SavingsAccount savingsAccount = new SavingsAccount(133,"Carlos", 1000.0, 0.01);
+        savingsAccount.withdraw(200.0);
 
 
         System.out.println(bcc);
@@ -34,8 +34,8 @@ public class Program {
 
         //UPCASTING
         Account acc0 = bcc;
-        Account acc1 = new BusinessAccount(1302, "Flávia Nayara", 250.0, 0.0);
-        Account scc = new SavingsAccount(1435,"Francinaldo Getulio", 250.0,0.1);
+        Account acc1 = new BusinessAccount(1302, "Flávia Nayara", 1000.0, 0.0);
+        Account scc = new SavingsAccount(1435,"Francinaldo Getulio", 1000.0,0.1);
 
         //DOWNCASTING
 
