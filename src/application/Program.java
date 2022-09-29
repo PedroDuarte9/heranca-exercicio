@@ -79,4 +79,18 @@ public class Program {
     }
 }
 
+/*Classes e Métodos final
+*  - Palavra chave: final
+*
+*  - Classe: evita que a classe seja herdada
+*       public final class SavingsAccount{
+*
+*  - Método evita que o método seja sobreposto
+*
+* PRA QUÊ UTILIZAR O final em Classes e Métodos ?
+* - Segurança: dependendo das regras do negócio, ás vezes é desejável garantir que uma classe não seja herdada, ou que um método não seja sobreposto.
+*   - Geralmente convém acrescentar final em métodos sobrepostos, pois sobreposições múltiplas podem ser uma porta de entrada para inconsistências
+*
+* - Performance: atributos de tipo de uma classe final são analisado s de forma mais rápida em tempo de execução.
+*   - Exemplo clássico: String   */
 
